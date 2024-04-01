@@ -1,28 +1,37 @@
+# Hello World in Python
+print ("Hello World!")
+
+# Integer in Python
+a = 3
+b = 2
+print (a+b)
+
+# String in Python
+nama = "vania rahmawati"
+
+print (nama)
+
+
+
 # GITHUB COMMAND LINE SAAT INISIALISASI PROJECT 
 
 - git init 
-digunakan untuk apa
-Ubah direktori saat ini menjadi repositori Git
+digunakan untuk Ubah direktori saat ini menjadi repositori Git
 
 - git add . 
-digunakan untuk apa
-menambahkan seluruh direktori secara rekursif, termasuk file yang namanya dimulai dengan titik
+digunakan untuk menambahkan seluruh direktori secara rekursif, termasuk file yang namanya dimulai dengan titik
 
 - git commit -m "pesannya"
-digunakan untuk apa
-Merekam snapshot file secara permanen dalam riwayat versi.
+digunakan untuk Merekam snapshot file secara permanen dalam riwayat versi.
 
 - git branch -m 
-digunakan untuk apa
-Untuk melihat daftar cabang lokal 
+digunakan Untuk melihat daftar cabang lokal 
 
 - git remote add origin (link kode ssh di repository github)
-digunakan untuk apa
-dapat digunakan untuk berkolaborasi dengan orang lain di repositori yang baru diinisialisasi.
+digunakan untuk berkolaborasi dengan orang lain di repositori yang baru diinisialisasi.
 
 - git push origin -u main
-digunakan untuk apa
-Saat mendorong cabang untuk pertama kalinya, jenis push ini akan mengonfigurasi hubungan antara remote dan repositori lokal Anda sehingga Anda dapat menggunakan git pulldan git pushtanpa opsi tambahan di masa mendatang.
+digunakan untuk Saat mendorong cabang untuk pertama kalinya, jenis push ini akan mengonfigurasi hubungan antara remote dan repositori lokal Anda sehingga Anda dapat menggunakan git pulldan git pushtanpa opsi tambahan di masa mendatang.
 
 # GITHUB COMMAND LINE SAAT MAINTENANCE/MONITORING PROJECT (TAMBAH KURANG ISI FILE)
 
