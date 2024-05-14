@@ -1,0 +1,39 @@
+ @startuml pert7
+start
+:Initialize total Harga to 0;
+:Display "Menu Warung:";
+:Display "MAKANAN:";
+:Display "1. Pecel Lele - 20,000   ";
+:Display "2. Mie Goreng - 15,000   ";
+:Display "3. Sambel Lalapan - 5,000";
+:Display " MINUMAN :";
+:Display " A. Air Putih - 4,000    ";
+:Display " B. Teh Manis - 7,000    ";
+:Display " C. Teh Tawar - 5,000    ";
+:Display "Masukkan pilihan, kode dan jumlah  (contoh: 1 2 untuk 2 Pecel Ayam)";
+:Read user input (pilihan, jumlah, kode);
+
+if (pilihan == 1) then (yes)
+    :Harga per unit = 20000;
+else if (pilihan == 2) then (yes)
+    :Harga per unit = 15000;
+else if (pilihan == 3) then (yes)
+    :Harga per unit = 5000;
+else if (pilihan == A) then (yes)
+    :Harga per unit = 4,000;
+else if (pilihan == B) then (yes)
+    :Harga per unit = 7,000;
+else if (pilihan == C) then (yes)
+    :Harga per unit = 5000;
+else
+    :Display "Pilihan tidak valid";
+    stop
+endif
+
+:totalHarga = Harga per unit * jumlah;
+:Display "Total Harga: " + totalHarga;
+:Process Payment;
+
+stop
+@enduml
+
