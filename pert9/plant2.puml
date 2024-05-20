@@ -1,0 +1,11 @@
+@startuml  pert9
+[*] --> Menu
+Menu : 1. Nasi Goreng
+Menu : 2. Mie Goreng 
+Menu --> Pilihan
+PILIHAN : Masukan Pilihan Anda
+PILIHAN -> Menu: Pilihan Anda Salah
+PILIHAN --> Nasi Goreng : Ya 
+PILIHAN --> Mie Goreng : Ya
+
+@enduml

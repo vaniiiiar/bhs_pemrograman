@@ -1,0 +1,20 @@
+@startuml pert10
+[*] --> Menu
+Menu --> 1. Ayam Goreng
+Menu --> 2. Lele Goreng
+Menu --> 3. Mie Goreng
+Menu -> Pilihan 
+
+Pilihan : Masukan Pilihan Anda
+if (pilihan == 1) then (yes)
+    :Harga per unit = 20000;
+else if (pilihan == 2) then (yes)
+    :Harga per unit = 15000;
+else if (pilihan == 3) then (yes)
+    :Harga per unit = 5000;
+else
+    :Display "Pilihan tidak valid";
+    stop
+endif
+
+

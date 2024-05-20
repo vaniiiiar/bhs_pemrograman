@@ -1,11 +1,10 @@
-#include <iostream>
-
+include <iostream>
 using namespace std;
 
 class Calculator {
     double angka1, angka2;
 
-    public:
+public:
     void input() {
         cout << "masukkan angka pertama : ";
         cin >> angka1;
@@ -13,6 +12,7 @@ class Calculator {
         cout << "masukkan angka kedua : ";
         cin >> angka2;
     }
+
     void calculate(int pilihan) {
         switch(pilihan){
             case 1 :

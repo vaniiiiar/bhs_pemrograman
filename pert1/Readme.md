@@ -1,19 +1,19 @@
-# BAHASA PEMROGRAMAN
+# BAHASA PEMROGRAMAN #
 Bahasa pemrograman sbgai kumpulan aturan yang di gunakan untuk membantu manusia dalam menjalankan intruksi yang di inginkan ke komputer 
 
-BAHASA PEMROGRAMAN TERDIRI DARI 
+## BAHASA PEMROGRAMAN TERDIRI DARI ##
 1. BAHASA MESIN, yang memberikan perintah kpd komputer dgn memakai kode biner 
 contohnya : (0110010100110)
 
 2. BAHASA TINGKAT RENDAH, memberikan perintah kepada komputer dengan memakai kode-kode singkat
 contohnya kode_mesin|MOV, SUB, CMP, JMP, JGE, JL, LOOP, dsb.
 
-3. BAHASA TINGKAT MENENGAH, bahasa yang memakai campuran instruksi dalam kata-kata bahasa manusia[butuh rujukan] dan instruksi yang bersifat simbolik
+3. BAHASA TINGKAT MENENGAH, bahasa yang memakai campuran instruksi dalam bahasa manusia[butuh rujukan] dan instruksi yang bersifat simbolik
 contohnya {, }, ?, <<, >>, &&, ||, dsb.
 
 4. BAHASA TINGKAT TINGGI, bahasa komputer yang memakai instruksi berasal dari unsur katakata bahasa manusia, contohnya begin, end, if, for, while, and, or, dsb.[butuh rujukan] Komputer dapat mengerti bahasa manusia itu diperlukan program Compiler atau Interpreter.
 
-# PARADIGMA PEMROGRAMAN
+# PARADIGMA PEMROGRAMAN #
 "Paradigma pemrograman merupakan pendekatan dalam memecahkan masalah dengan bahasa program yang digunakan."
 
 JENIS PARADIGMA PEMROGRAMAN :

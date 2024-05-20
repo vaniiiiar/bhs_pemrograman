@@ -23,7 +23,7 @@ def main():
         else:
             print("Pilihan Invalid ")
 
-            pil = input("Ingin kembali ke menu? (Y/N) : ")
+        pil = input("Ingin kembali ke menu? (Y/N) : ")
         if pil.lower() != 'y':
             print("\nTERIMA KASIH")
             break
