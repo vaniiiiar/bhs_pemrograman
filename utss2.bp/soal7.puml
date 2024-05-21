@@ -1,0 +1,26 @@
+@startuml utss2.bp
+
+title Program Flow
+
+start
+
+:Main Function;
+:menu();
+
+while (Pilihan operasi (1-5)) is (1-4)
+    if (Pilihan operasi (1-5)) is (1)
+        :tambah();
+    elseif (Pilihan operasi (1-5)) is (2)
+        :kurang();
+    elseif (Pilihan operasi (1-5)) is (3)
+        :kali();
+    else
+        :bagi();
+    endif
+endwhile
+
+:Kembali;
+
+stop
+
+@enduml
