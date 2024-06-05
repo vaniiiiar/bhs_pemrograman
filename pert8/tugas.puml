@@ -1,0 +1,47 @@
+@startuml pert8
+title Rencana Bisnis Fashion Uniqlo
+
+left to right direction
+
+actor Pelanggan as "Pelanggan"
+actor Manajer as "Manajer"
+actor Desainer as "Desainer"
+actor TimAplikasi as "Tim Pengembangan Aplikasi"
+actor Investor as "Investor"
+
+rectangle "Uniqlo Fashion" {
+    rectangle "Produk dan Layanan" {
+        usecase "Desain Produk" as UC1
+        usecase "Produksi dan Stok" as UC2
+        usecase "Jualan di Toko" as UC3
+        usecase "Aplikasi Mobile" as UC4
+        usecase "Promosi dan Pemasaran" as UC5
+        usecase "Layanan Pelanggan" as UC6
+    }
+
+    rectangle "Operasional dan Keuangan" {
+        usecase "Rencana Operasional" as UC7
+        usecase "Pengelolaan Keuangan" as UC8
+    }
+
+    rectangle "Legalitas dan Sertifikasi" {
+        usecase "Izin Usaha" as UC9
+        usecase "Sertifikasi Produk" as UC10
+    }
+}
+
+Pelanggan --> UC3 : Beli Produk di Toko
+Pelanggan --> UC4 : Beli Produk di Aplikasi
+Pelanggan --> UC6 : Ajukan Pertanyaan/Layanan Pelanggan
+
+Manajer --> UC2 : Pantau Produksi dan Stok
+Manajer --> UC7 : Kelola Operasional
+Manajer --> UC8 : Kelola Keuangan
+
+Desainer --> UC1 : Desain Produk
+
+TimAplikasi --> UC4 : Kembangkan dan Kelola Aplikasi
+
+Investor --> UC8 : Investasi Modal
+
+@enduml
