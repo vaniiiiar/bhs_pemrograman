@@ -4,7 +4,6 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Factory as Auth;
-use Illuminate\Support\Facades\DB;
 
 class Authenticate
 {
@@ -37,27 +36,9 @@ class Authenticate
     public function handle($request, Closure $next, $guard = null)
     {
         if ($this->auth->guard($guard)->guest()) {
-            $token = $request->header('token');
-            if ($token) {
-                $token = trim(str_replace('Bearer', '', $token));
-                //$user = User::where('password', $token)->first();
-                $user = DB::connection('mysql')->table('users')->where('password', $token)->first();
-                dd($user);
-                if (!$user) {
-                    return response()->json([
-                        'success' => false,
-                        'message' => 'Permission Not Allowed'
-                    ], 403);
-                }
-                $this->auth->setUser($user);
-            } else {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Not Authorized'
-                ], 401);
-            }
+            return response('Unauthorized.', 401);
         }
-        
+
         return $next($request);
     }
 }
